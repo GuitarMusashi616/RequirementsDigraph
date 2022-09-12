@@ -1,0 +1,29 @@
+ID,Name,Description,Priority,Dependencies,Interested Parties,Predicted Difficulty,Notes
+1,Project Created Notification,Send notification email when a new project is created,N/A,None,,N/A,Already Implemented
+2,Project Turned Off Notification,"Send notification email when a project is ""turned off""",Medium,None,Kyle,Easy,"Emily does not want notification ""when active toggle set to false"""
+3,Project Due Date Changed Notification,Send notification email when a project's due date is changed,High,None,Kyle,Easy,
+4,Project Details Notification,Send notification email when a project is edited,High,None,"Emily, Kyle",Easy,"When someone gets added / removed, when pm changes"
+5,Project Assigned Notification,Send notification email when a Pango is assigned to a project,N/A,None,,N/A,Already Implemented
+6,Notification based on specific change,Create / send specific notification email for each type of notification,High,"1, 2, 3, 4, 5","Emily, Kyle",Med-Hard,"highlight specific change, rest of project info ""below the fold"""
+7,Daily Notification Sender,Send emails every morning based on result of database query,High,None,,Unknown,Proposed solution for detecting when budget hits 50% usage
+8,Get Pango Hours Used,Calculate Pango hours worked from Journyx database,High,None,,Unknown,
+9,Budget Usage Notification,"Send notification email when a designated portion of the budget has been used (50%, 80%, and 90%)",High,8,"Kyle, Emily",Hard,Both for whole project and individual Pangos
+10,Deadline Notification,"Send notification email when the end date falls within a designed number of days (30 days, 14 days, and 7 days)",High,"7, 8","Kyle, Emily",Medium,
+11,Form Validation,Only allows valid entries in input fields on new project form and edit project form,Low,None,,Medium,
+12,Changelog,A written record found on the project details page that list all past edits with a timestamp/date,High,None,Emily,Med-Hard,
+13,Project Save Delay,Waits 30 minutes after most recent change before sending email or adding changes to changelog,Medium,None,Emily,Hard,Proposed solution for reducing email notification spam
+14,Notification Tracking,A new table responsible for recording when a notifcation was sent to eliminate the risk of repeat notifications,Medium,6,Kyle,Med-Hard,Proposed solution for reducing email notification spam
+15,Add Account Manager Field,"Add Account Manager field to Project Details Page, allows assignment of secondary admin / pm to project",Medium,None,"Kyle, Craig",Med-Easy,
+16,Add Clients as Database Entries,"Eliminates having to spell the client name each time, possibly leading to typo",Medium,None,"Emily, Kyle",Medium,
+17,Clients Tab in PM sidebar,Add navigation tab for client database entries,Low,16,Emily,Med-Easy,
+18,List All Projects for Clients,Make client database entries list all projects for that particular client,Low,16,,Medium,
+19,Linear Budget Used Up Predictions,Simple way of predicting current budget usage,Medium,9,"Kyle, Craig",Med-Hard,
+20,Rolling Average Predictions,"Used in place of static budget usage notifications to more accruately predict the 30 days, 14 days, and 7 days notifications",Med-low,9,Craig,Hard,
+21,Email To: <receiver1> <receiver2>,"Currently only shows one person in the ""To: "" line, make it show all receivers so each receiver can see who else received it",Med-low,6,Emily,Easy,
+22,SSRS Report Automation,Automate weekly task of manually creating multiple reports with same input settings,Low,None,Joel,Unknown,
+23,Automated Spreadsheet,Improve pm3 weekly generated spreadsheet,Low,None,Kyle,Unknown,
+24,Speed up Journyx query table,Improve loading time of journyx project / budget view,Low,None,Craig,Unknown,
+25,Limit selectable roles for employees,Make it easier for employees to select correct role / project,Low,11,Craig,Medium,
+26,Merge employees into one hourly rate ,When employee has multiple roles / hourly rates for company blend by averaging into a single hourly rate,Low,None,Craig,Medium,
+27,One agreement across multiple projects,"eg. one company has 2 projects (25k and 75k budget), when 25k budget runs out company wants to charge 75k budget",Low,None,Craig,Unknown,Find a way to keep track eg. add related / coupled projects field
+28,Settings Page: opt in and out of emails,"Lets Pangos specify email notification options from settings page, config stored in database",Low,6,Josh,Med-Hard,
